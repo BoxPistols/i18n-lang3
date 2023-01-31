@@ -16,9 +16,9 @@ import FormLabel from "@mui/material/FormLabel"
 const Language = () => {
   const { i18n } = useTranslation()
   const [language, setLanguage] = useState(
-    window.localStorage.getItem("lang")
-      ? window.localStorage.getItem("lang")
-      : "ja"
+    window.localStorage.getItem("lang") === "ja" || "ja-JP"
+      ? "ja"
+      : "en"
   )
 
   const handleLangChange = (evt) => {
@@ -66,10 +66,8 @@ const Language = () => {
                     labelId="select-label"
                     id="select"
                     onChange={handleLangChange}
-                    value={language}
-                    checked={language}
+                    value={i18n.language}
                     size="small"
-                    // selected={window.localStorage.getItem("lang")}
                   >
                     <MenuItem value="ja" checked={i18n.language === "ja"}>
                       JA
