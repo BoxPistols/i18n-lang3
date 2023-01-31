@@ -1,8 +1,8 @@
 {
-  "name": "i18-lang2",
+  "name": "i18-lang3",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://boxpistols.github.io/i18n-lang2/",
+  "homepage": "https://boxpistols.github.io/i18n-lang3/",
   "dependencies": {
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.5",

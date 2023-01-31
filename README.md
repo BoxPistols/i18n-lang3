@@ -3,7 +3,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<https://boxpistols.github.io/i18n-lang2/>
+<https://boxpistols.github.io/i18n-lang3/>
 
 ## Available Scripts
 
