@@ -35,27 +35,40 @@ const Language = () => {
       <form>
         <section className="section">
           {/* Select */}
-          <Box sx={{ p: 3, display: "flex", flexDirection: "column", gap: 3 }}>
-            {/* <div className="card"> */}
-            <Box>
+          <Box
+            sx={{
+              p: 2,
+              display: "flex",
+              flexDirection: "column",
+              gap: 2,
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                border: `1px solid rgba(100,100,100,0.1)`,
+                width: "fit-content",
+              }}
+            >
               <FormControl fullWidth>
                 <Box
                   sx={{
-                    pl: 4,
-                    gap: 2,
+                    p: 1,
+                    gap: 1,
                     display: "flex",
                     alignItems: "center",
                     // justifyContent: "center",
                   }}
                 >
-                  <label id="select-label">Select Lang</label>
-                  {/* <InputLabel id="select-label">Select Lang</InputLabel> */}
+                  <label id="select-label">Lang</label>
+                  {/* <InputLabel id="select-label">Lang</InputLabel> */}
                   <Select
                     labelId="select-label"
                     id="select"
                     onChange={handleLangChange}
                     value={language}
                     checked={language}
+                    size="small"
                     // selected={window.localStorage.getItem("lang")}
                   >
                     <MenuItem value="ja" checked={i18n.language === "ja"}>
@@ -76,7 +89,7 @@ const Language = () => {
             <FormControl>
               <Box
                 sx={{
-                  pl: 4,
+                  pl: 2,
                   gap: 2,
                   display: "flex",
                   alignItems: "center",
@@ -84,7 +97,7 @@ const Language = () => {
                 }}
               >
                 <FormLabel id="group-label" sx={{ fontSize: 18 }}>
-                  Choose Lang
+                  Lang
                 </FormLabel>
                 <RadioGroup
                   row
